@@ -7,7 +7,7 @@
 
 /* Reset and Base Styles */
 * {
-    /* Add your reset styles here (margin, padding, box-sizing) */
+    /* Reset styles (margin, padding, box-sizing) */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,26 +26,35 @@ body {
     color: black;
 }
 
-/* TODO Task 2: Style your headings */
+/* TODO Task 2: Headings */
 h1 {
-    padding: 50px 35px; 
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 h2 {
-    padding: 20px 35px;   
+    padding: 15px 35px;   
     
 }
 
-/* TODO Task 2: Style your paragraphs */
+/* TODO Task 2: Paragraphs */
 p {
     padding-left: 35px;
     padding-right: 35px;
     margin: 5px;    
 }
 
-/* TODO Task 2: Style your images */
+/* TODO Task 2: Images */
 img {
-    padding: 20px;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
 /* TODO Task 3: Navigation Styles */
@@ -58,7 +67,7 @@ nav {
 }
 
 nav ul {
-    /* Remove bullets and style the list */
+    /* Removed bullets and styled the list */
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -74,14 +83,23 @@ nav li {
 }
 
 nav a {
-    /* Style the links */
+    /* Styled the links */
     text-decoration: none;
     color: black;
 }
 
 nav a:hover {
-    /* Add hover effect */
+    /* Added hover effect */
     color: rgb(121, 158, 190);
+}
+
+/* Hide nav checkbox and hamburger icon on Desktop mode */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
 }
 
 /* Main Content Styles */
@@ -91,8 +109,8 @@ main {
 }
 
 section {
-    /* Add spacing between sections */
-    padding: 30px;
+    /* Added spacing between sections */
+    padding: 20px;
 }
 
 /* TODO Task 4: Form Styles */
@@ -132,7 +150,7 @@ button {
 }
 
 button:hover {
-    /* Add hover effect for button */
+    /* Added hover effect for button */
     cursor: pointer;
     border-color: rgb(121, 158, 190);
 }
@@ -157,7 +175,7 @@ footer a:hover {
 /* TODO Task 5: Media Queries for Responsive Design */
 /* Tablet styles (optional) */
 @media (max-width: 768px) {
-    /* Add your tablet/mobile styles here */
+    /* Added tablet/mobile styles here */
     body {
         font-size: 17px;
     }
@@ -177,11 +195,16 @@ footer a:hover {
     button {
         font-size: 16px;
     }
+
+    img {
+        max-width: 70%;
+        height: auto;
+    }
 }
 
 /* Mobile styles */
 @media (max-width:  480px) {
-    /* Add your mobile-specific styles here */
+    /* Added mobile-specific styles here */
     body {
         font-size: 15px;
     }
@@ -191,5 +214,31 @@ footer a:hover {
         width: 350px;
         font-size: 15px;
         
+    }
+    /*Show hamburger icon*/
+    .nav-toggle-label {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /*Stacked and vertical navbar*/
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(170, 200, 224);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label + ul {
+        display: flex;
+    }
+
+    nav li {
+        text-align: left;
+        padding: 10px;
     }
 }
