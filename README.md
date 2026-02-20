@@ -1,6 +1,6 @@
 # Workshop 01: Web Development Basics
 
-This is the first web development workshop on Laurea's Full Stack Development cource. In this workshop, we revised the fundamentals of HTML, CSS, and responsive design by completing 5 hands-on tasks:
+This is the first web development workshop on Laurea's Full Stack Development course. In this workshop, we revised the fundamentals of HTML, CSS, and responsive design by completing 5 hands-on tasks:
 - A structured HTML page
 - Custom CSS styling
 - A navigation menu
@@ -12,9 +12,9 @@ This is the first web development workshop on Laurea's Full Stack Development co
 ### Task 1: Create Your First HTML Page ✏️
 I created a basic HTML page that includes:
 - Proper document structure
-- A descriptive <title>
-- A main heading (<h1>) with my name 
-- A tagline in <h2>
+- A descriptive `<title>`
+- A main heading (`<h1>`) with my name 
+- A tagline in `<h2>`
 - An introduction paragraph
 - An amage with alt attribute
 
@@ -28,9 +28,9 @@ The style.css file includes:
 
 ### Task 3: Build a Simple Navigation Menu 🧭
 I added a navigation bar that:
-- Uses a <nav> with <ul> and <li> items
+- Uses a `<nav>` with `<ul>` and `<li>` items
 - Links to internal sectons: Home, About and Contact
-- Includes matching <section> elements with IDs
+- Includes matching `<section>` elements with IDs
 - Is styled with CSS:
    - No bullet points
    - Horizontal layout
